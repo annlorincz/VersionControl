@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UserMaintenance.Entities;
 
 namespace UserMaintenance
 {
@@ -19,6 +20,8 @@ namespace UserMaintenance
             InitializeComponent();
             label1.Text = Resource1.FullName; 
             button1.Text = Resource1.Add;
+            button2.Text = Resource1.Import;
+            button3.Text = Resource1.Delete;
 
             listBox1.DataSource = users;
             listBox1.ValueMember = "ID";
