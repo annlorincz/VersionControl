@@ -30,12 +30,12 @@ namespace UserMaintenance
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public void button1_Click(object sender, EventArgs e)
         {
-            var u = new User()
+            var u = new Entities.User()
             {
-                LastName = txtLastName.Text,
-                FirstName = txtFirstName.Text
+                LastName = textBox1.Text,
+                FirstName = textBox2.Text
             };
             users.Add(u);
         }
